@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+i {
+    position: absolute;
+    left: 0;
+    color: #F3B007;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #EFF0F3;
+}
+
+.cards, .card {
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.card {
+    border-radius: 1rem;
+    background: #FFFFFF;
+    margin: 2rem auto;
+    height: 100%;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+/* Pricing part of Card */
+
+.card__pricing h1 {
+    display: inline-block;
+    margin: 0 10px;
+    color: #081F32;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.card__pricing span {
+    color: #A5ADBB;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/* Info Part of Card */
+
+.card__info h1 {
+    color: #F3B10E;
+    font-family: 'DM Serif Display';
+    font-weight: 400; 
+    line-height: 89%;
+}
+
+.card__info p {
+    font: normal 'Open Sans' 400 16px;
+    line-height: 156%;
+    color: #92969D;
+}
+
+
+/* Features part of the Card */
+
+.card__features {
+    padding: 10px;
+    position: relative;
+}
+
+.card__features__items {
+    list-style: none;
+
+}
+
+.card__features__item {
+    margin: 1.2rem 0;
+    color: #6E798C;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Cta Button part */
+
+.card__cta {
+    margin: 4rem 0 0 0;
+    text-align: center;
+}
+
+.card__cta__button {
+    background: #EBECED;
+    border-radius: 8px;
+    border: none;
+    color: #798289;
+    text-align: center;
+    padding: 1rem 1.4rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card__cta__button:hover {
+    background: #c1c3c6;
+    font-weight: bolder;
+}
+
+.second-card__cta-button {
+    background: none;
+    border: 1.5px solid #EBECED;
+}
+
+.second-card__cta-button:hover {
+    background: none;
+    font-weight: inherit;
+}
+
+.third-card__cta-button {
+    background: #46D68C;
+    color: #FFFFFF;
+}
+
+.third-card__cta-button:hover {
+    background: none;
+    border: 1.5px solid #EBECED;
+    color: black;
+}
+
+/* Media Queries */
+
+
+@media (min-width: 600px) {
+    .card {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .card {
+        display: inline-block;
+        max-width: 700px;
+        width: 40%;
+        margin: 10px 32px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+
+    .card__cta__button {
+        padding: 0.7rem auto;
+    }
+}
+
+@media (min-width: 1150px) {
+    .cards {
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+    .card {
+        width: 28%;
+    }
+    .card__cta {
+        width: 100%;
+    }
+    .card__cta__button {
+        padding: 0.7rem 2rem;
+    }
+}
+
